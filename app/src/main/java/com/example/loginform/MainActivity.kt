@@ -119,7 +119,7 @@ fun LoginForm () {
             trailingIcon = {
                 val image = if (passwordVisible.value) R.drawable.ic_baseline_password_24 else R.drawable.ic_baseline_remove_red_eye_24
 
-                val description = if (passwordVisible.value) "Show password" else "Hide password";
+                val description = if (passwordVisible.value) "Hide password" else "Show password";
 
                 IconButton(onClick = { passwordVisible.value = !passwordVisible.value }) {
                     androidx.compose.material.Icon(painter = painterResource(id = image), contentDescription = description)
